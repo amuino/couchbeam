@@ -4,9 +4,9 @@
 %%% This file is part of couchbeam released under the MIT license.
 %%% See the NOTICE for more information.
 
-{application, couchbeam,
- [{description, "Erlang CouchDB client"},
-  {vsn, "1.4.2"},
+{application, couchbeam_amuino,
+ [{description, "Erlang CouchDB client + fixes"},
+  {vsn, "1.4.3-amuino.4"},
   {modules, []},
   {registered, [
     couchbeam_sup
@@ -23,9 +23,9 @@
   {env, []},
   {mod, { couchbeam_app, []}},
 
-  {maintainers, ["Benoit Chesneau"]},
+  {maintainers, ["Benoit Chesneau (author)", "Abel Muino (patches)"]},
   {licenses, ["MIT"]},
-  {links, [{"Github", "https://github.com/benoitc/couchbeam"}]},
+  {links, [{"Github", "https://github.com/amuino/couchbeam"}]},
   {files, [
     "src",
     "include",

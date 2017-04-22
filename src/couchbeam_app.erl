@@ -16,7 +16,7 @@
 %%          {error, Reason}
 %%--------------------------------------------------------------------
 start(_Type, _StartArgs) ->
-    couchbeam_util:start_app_deps(couchbeam),
+    couchbeam_util:start_app_deps(couchbeam_amuino),
     couchbeam_sup:start_link().
 
 %%--------------------------------------------------------------------
@@ -25,4 +25,3 @@ start(_Type, _StartArgs) ->
 %%--------------------------------------------------------------------
 stop(_State) ->
     ok.
-

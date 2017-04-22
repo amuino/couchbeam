@@ -1,4 +1,11 @@
+# NOTE
 
+This is a fork of [`couchbeam`](http://github.com/benoitc/couchbeam) which contains PRs by me
+([amuino](https://github.com/amuino)) and renames the package to `couchbeam_amuino`.
+
+I use this for my own testing with version [`1.4.3-amuino.*`](https://hex.pm/packages/couchbeam_amuino), use responsibly.
+
+Original README follows:
 
 # Couchbeam - simple Barrel and Apache CouchDB client library for Erlang applications #
 
