@@ -557,12 +557,3 @@ maybe_close(#state{client_ref=nil}) ->
     ok;
 maybe_close(#state{client_ref=Ref}) ->
     hackney:close(Ref).
-
-post_decode([{}]) ->
-    {[]};
-post_decode([{_Key, _Value} | _Rest] = PropList) ->
-    {[ {Key, post_decode(Value)} || {Key, Value} <- PropList ]};
-post_decode(List) when is_list(List) ->
-    [ post_decode(Term) || Term <- List];
-post_decode(Term) ->
-    Term.
